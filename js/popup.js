@@ -1,0 +1,39 @@
+$(function(){
+    $('#box1').click(function(){
+        $('#popup01').fadeIn();
+    });
+    $('#close1').click(function(){
+        $('#popup01').fadeOut();
+    });
+    $('#close1_2').click(function(){
+        $('#popup01').fadeOut();
+    });
+    $('#box2').click(function(){
+        $('#popup02').fadeIn();
+    });
+    $('#close2').click(function(){
+        $('#popup02').fadeOut();
+    });
+    $('#close2_2').click(function(){
+        $('#popup02').fadeOut();
+    });
+    $('#box3').click(function(){
+        $('#popup03').fadeIn();
+    });
+    $('#close3').click(function(){
+        $('#popup03').fadeOut();
+    });
+    $('#close3_2').click(function(){
+        $('#popup03').fadeOut();
+    });
+    $('#box4').click(function(){
+        $('#popup04').fadeIn();
+    });
+    $('#close4').click(function(){
+        $('#popup04').fadeOut();
+    });
+    $('#close4_2').click(function(){
+        $('#popup04').fadeOut();
+    });
+  
+});

@@ -1,0 +1,302 @@
+@charset "UTF-8";
+.banner{
+    width: 100%;
+    margin: auto;
+    height: 275px;
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: 100px;
+    background: url("../img/sub04Main.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.banner>.textBox{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #000000a6;
+    display: flex;
+    align-items: center;
+}
+.banner>.textBox::after{
+    content: "";
+    position: absolute;
+    background: #114599;
+    height: 10px;
+    left: 0;
+    bottom: 0;
+    animation: line 3s forwards;
+}
+@keyframes line {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+.banner>.textBox>h2{
+    color: #fff;
+    width: 1200px;
+    margin: auto;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+/* contactBox */
+section{
+    width: 100%;
+    margin-bottom: 150px;
+}
+section>.contact{
+    width: 1100px;
+    min-width: 300px;
+    margin: auto;
+    position: relative;
+    height: 600px;
+    box-sizing: border-box;
+    box-shadow: 0 5px 15px #24242454;
+    padding: 70px;
+    background-color: #FCFCFC;
+}
+section>.contact::after{
+    content: "";
+    display: block;
+    width: 230px;
+    height: 100%;
+    background-color: #003668;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+section>.contact>.from>h2{
+    font-size: 40px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+section>.contact>.from>img{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+section>.contact>.from>input{
+    display: block;
+    width: 350px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    border: none;
+    border-bottom: 1px solid #D9D9D9;
+    padding-bottom: 5px;
+    background-color: transparent;
+}
+section>.contact>.from>textarea{
+    display: block;
+    width: 350px;
+    height: 110px;
+    margin-bottom: 30px;
+    border: none;
+    resize: none;
+    box-sizing: border-box;
+    background-color: transparent;
+    padding: 10px;
+    border-bottom: 1px solid #D9D9D9;
+    font-size: 18px;
+    font-family: 'Pretendard-Regular';
+}
+section>.contact>.from>textarea:focus{
+    outline: none;
+}
+section>.contact>.from>textarea::placeholder {
+    color: #D9D9D9;
+  }
+input:focus{
+    outline: none;
+}
+input::placeholder {
+  color: #D9D9D9;
+}
+input::placeholder {              /* Chrome, Safari, Firefox */
+  color: #D9D9D9;
+  opacity: 1;
+}
+input:-ms-input-placeholder {     /* IE, Edge */
+  color: #D9D9D9;   
+  opacity: 1;
+}
+/* old version */
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+input:focus::-moz-placeholder {
+  color: transparent;
+}
+input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+input:focus::-ms-input-placeholder {
+  color: transparent;
+}
+section>.contact>.from>button{
+    cursor: pointer;
+    width: 350px;
+    padding: 10px 0;
+    background-color: #242424;
+    color: #fff;
+    border: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+section>.contact>.info{
+    position: absolute;
+    width: 530px;
+    min-width: 300px;
+    height: 420px;
+    background-color: #242424;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9;
+    box-sizing: border-box;
+    padding: 50px;
+    color: #fff;
+}
+section>.contact>.info::before{
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: #003668;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    box-shadow: 0 10px 15px #0000002d;
+}
+section>.contact>.info>h2{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 70px;
+}
+section>.contact>.info>div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+section>.contact>.info>div>img{
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 1210px){
+    .banner{
+        width: 100%;
+    }
+    .banner>.imgBox{
+        width: 100%;
+    }
+    .banner>.textBox{
+        padding: 10px;
+    }
+    section{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 10px;
+    }
+    section>.contact{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 1024px){
+    .banner{
+        margin-bottom: 70px;
+    }
+    .banner>.textBox>h2{
+        font-size: 40px;
+    }
+    section>.contact>.info{
+        width: 350px;      
+    }
+}
+
+@media screen and (max-width: 860px){
+    section{margin-bottom: 70px;}
+    section>.contact{
+        height: auto;
+        margin-bottom: 0;
+    }
+    section>.contact>.from{
+        margin-bottom: 30px;
+    }
+    section>.contact>.info{
+        position: unset;
+        transform: unset;
+        width: 100%;
+    }
+    section>.contact>.info::before{
+        display: none;
+    }
+    section>.contact{
+        margin-bottom: 40px;
+    }
+    section>.contact::after{
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .banner{
+        height: 130px;
+        margin-bottom: 50px;
+    }
+    .banner>.textBox::after{
+        height: 5px;
+    }
+    .banner>.textBox>h2{
+        font-size: 20px;
+    }
+    section>.contact::after{
+        display: none;
+    }
+    section>.contact>.from>input{
+        width: 100%;
+        font-size: 16px;
+    }
+    section>.contact>.from>textarea{
+        width: 100%;
+        font-size: 16px;
+    }
+    section>.contact>.from>button{
+        width: 100%;
+    }
+    section>.contact>.info{
+       width: 100%;
+       padding: 20px;
+       height: auto;
+    }
+    section>.contact>.info>h2{
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+    section>.contact>.info>div{
+        font-size: 14px;
+    }
+    section>.contact>.info>div>img{
+        width: 20px;
+    }
+    section>.contact{
+        padding: 30px;
+        height: auto;
+
+    }
+    section>.contact>.from>h2{
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+}

@@ -1,0 +1,29 @@
+<div class="container">
+<div class="hedaer-left">
+ <a href="index.php"><img src="/img/logo.png" alt="로고"></a>
+</div>
+
+
+<div class="header-right">
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+<ul class="menu">
+    <li><a href="index.html">스마트 돌봄</a></li>
+    <li><a href="sub02.html">서비스 안내</a></li>
+    <li><a href="sub03.html">연구내용</a></li>
+    <li><a href="sub04.php">공지사항 & 새소식</a></li>
+    <li><a href="sub05.php">자료실</a></li>
+    <li><a href="sub06.html">Contact</a></li>
+</ul>
+</div>
+</div>
+<script>
+$('.hamburger').click(function(){
+    $(this).toggleClass('active');
+    $('.header-right .menu').toggleClass('overflow');
+});
+</script>

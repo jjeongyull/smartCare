@@ -1,0 +1,24 @@
+@charset "UTF-8";
+.pager{
+    width: 1200px;
+    min-width: 300px;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.page{
+    display: block;
+    padding: 10px ;
+    font-size: 14px;
+}
+.page.on{
+    background-color: #003668;
+    color: #fff;
+}
+
+@media screen and (max-width: 1210px){
+    .pager{
+        width: 100%;
+    }
+}

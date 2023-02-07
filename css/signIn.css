@@ -1,0 +1,303 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+/* 로그인 폼 */
+body{
+    font-family: 'Pretendard-Regular';
+    background-color: #e7eefb;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-width: 300px;
+}
+section>.inner{
+    width: 1100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    box-sizing: border-box;
+}
+section>.inner::before{
+    content: "";
+    width: 1px;
+    height: 100%;
+    background-color: rgb(207, 207, 207);
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+section>.inner>.login01{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section>.inner>.login01>img{
+    width: 140px;
+}
+section>.inner>.login02{
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+section>.inner>.login02>.form{
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section>.inner>.login02>.form>input{
+    display: block;
+    width: 350px;
+    box-sizing: border-box;
+    padding: 20px 10px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(223, 223, 223);
+    border-radius: 5px;
+}
+section>.inner>.login02>.form>input:focus{
+    outline: none;
+    border: 2px solid #003668;
+}
+section>.inner>.login02>.form>input[type="password"]{
+    margin-bottom: 10px;
+}
+section>.inner>.login02>.form>.loginBtn0{
+    margin-top: 10px;
+}
+section>.inner>.login02>.form>.loginBtn{
+    display: block;
+    width: 350px;
+    text-align: center;
+    background-color: #003668;
+    color: #fff;
+    padding: 15px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+section>.inner>.login02>.btn{
+    width: 350px;
+    margin: 0 auto;
+    text-align: right;
+}
+section>.inner>.login02>.btn>.signUp{
+    cursor: pointer;
+    color: rgb(138, 138, 138);
+}
+
+@media screen and (max-width:1100px) {
+    section>.inner{
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+@media screen and (max-width:860px) {
+    section>.inner{
+        flex-wrap: wrap;
+    }
+    section>.inner::before{
+        display: none;
+    }
+    section>.inner>.login01{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    section>.inner>.login01>img{
+        width: 300px;
+    }
+    section>.inner>.login02{
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+@media screen and (max-width:600px){
+    section>.inner>.login01{
+        margin-bottom: 40px;
+    }
+    section>.inner>.login01>img{
+        width: 70px;
+    }
+    section>.inner>.login02>.form>input{
+        width: 95%;
+        margin-bottom: 10px;
+    }
+    section>.inner>.login02>.form>.loginBtn{
+        width: 95%;
+    }
+    section>.inner>.login02>.btn{
+        width: 95%;
+    }
+}
+
+/* 회원가입 폼 */
+
+.red{
+    color: rgb(214, 0, 0);
+}
+.popup{
+    display: none;
+    background-color: #3b3b3b86;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 10px 0;
+    min-width: 300px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.popup>.inner2{
+    width: 700px;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 30px;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+.popup>.inner2>h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e7eefb;
+    margin-bottom: 30px;
+}
+.popup>.inner2>.form{
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+}
+.popup>.inner2>.form>label{
+    display: block;
+    margin-bottom: 5px;
+}
+.popup>.inner2>.form>input{
+    margin-bottom: 5px;
+    display: block;
+    width: 500px;
+    margin-right: 10px;
+    box-sizing: border-box;
+    padding: 15px 10px;
+    border: 1px solid rgb(223, 223, 223);
+    border-radius: 5px;
+    transition: .3s;
+}
+.popup>.inner2>.form:nth-child(8){
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.popup>.inner2>.form>.agreed{
+    font-size: 14px;
+    margin-right: 5px;
+}
+.popup>.inner2>.form>input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+}
+.popup>.inner2>.form>input:focus{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    outline: none;
+    border: 1px solid #003668;
+}
+.popup>.inner2>.form>.checkBtn{
+    background-color: #003668;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    padding:  10px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+}
+.popup>.inner2>.okBtn{
+    position: absolute;
+    width: 100%;
+    background-color: #003668;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+    text-align: center;
+    height: 70px;
+    color: #fff;
+    display: flex;
+    overflow: hidden;
+}
+.popup>.inner2>.okBtn>span{
+    display: block;
+    width: 50%;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.popup>.inner2>.okBtn>.signBack{
+    background-color: rgb(139, 26, 26);
+}
+
+@media screen and (max-width:700px){
+    .popup{
+        width: 100%;
+        padding: 10px;
+        height: auto;
+    }
+    .popup>.inner2{
+        width: 100%;
+    }
+    .popup>.inner2>.form:nth-child(8){
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width:600px){
+    .popup>.inner2{
+        padding: 20px;
+    }
+    .popup>.inner2>h2{
+        font-size: 18px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    .popup>.inner2>.form{
+        width: 100%;
+    }
+    .popup>.inner2>.form>input{
+        width: 100%;
+        padding: 10px;
+    }
+    .popup>.inner2>.form>label{
+        font-size: 14px;
+    }
+    .popup>.inner2>.form>.agreed{
+        font-size: 12px;
+    }
+    .popup>.inner2>.form>input[type="checkbox"]{
+        width: 15px;
+        height: 15px;
+    }
+    .popup>.inner2>.form>.checkBtn{
+        font-size: 10px;
+    }
+    .popup>.inner2>.okBtn{
+        height: 50px;
+    }
+}

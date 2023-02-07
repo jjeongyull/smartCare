@@ -1,0 +1,225 @@
+@charset "UTF-8";
+
+.banner{
+    width: 100%;
+    margin: auto;
+    height: 275px;
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: 100px;
+    background: url("../img/sub05/sub05Main.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 300px;
+}
+.banner>.textBox{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #000000a6;
+    display: flex;
+    align-items: center;
+}
+.banner>.textBox::after{
+    content: "";
+    position: absolute;
+    background: #114599;
+    height: 10px;
+    left: 0;
+    bottom: 0;
+    animation: line 3s forwards;
+}
+@keyframes line {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+.banner>.textBox>h2{
+    color: #fff;
+    width: 1200px;
+    margin: auto;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+/* section01 */
+.section01{
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    min-width: 300px;
+}
+.section01>h1{
+    font-size: 35px;
+    font-weight: bold;
+    position: relative;
+}
+.section01>h1::before{
+    content: "";
+    width: 50px;
+    height: 3px;
+    background-color: #003668;
+    position: absolute;
+    left: 0;
+    top: -15px;
+}
+
+/* section02 */
+.section02{
+    width: 1200px;
+    margin: 0 auto;
+    min-width: 300px;
+}
+.section02>.notice{
+    width: 100%;
+    display: flex;
+    border-top: 1px solid #000;
+    border-bottom: 3px solid #003668;
+    padding: 15px 0;
+}
+.section02>.notice>.title1{
+    width: 5%;
+    text-align: center;
+}
+.section02>.notice>.title2{
+    width: 65%;
+    text-align: center;
+}
+.section02>.notice>.title3{
+    width: 10%;
+    text-align: center;
+}
+.section02>.notice>.title4{
+    width: 10%;
+    text-align: center;
+}
+.section02>.notice>.title5{
+    width: 10%;
+    text-align: center;
+}
+
+/* section03*/
+.section03{
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 150px;
+    min-width: 300px;
+}
+.section03 li{
+    display: block;
+    display: flex;
+    border-bottom: 1px solid rgb(223, 223, 223);
+    padding: 15px 0;
+}
+
+.section03 li span{
+    display: block;
+    width: 10%;
+    text-align: center;
+    line-height: 23px;
+}
+.section03 li span:first-child{
+    display: block;
+    width: 5%;
+    text-align: center;
+}
+.section03 .btn{
+    width: 65%;
+}
+.section03 .btn a{
+    padding-left: 50px;
+    line-height: 23px;
+}
+.section03 .file{
+    display: block;
+    width: 10%;
+    text-align: center;
+}
+@media screen and (max-width: 1210px){
+    .banner{
+        width: 100%;
+    }
+    .banner>.textBox{
+        box-sizing: border-box;
+        padding: 10px;
+    }
+    .section01{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+        margin-bottom: 50px;
+    }
+    .section02{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 10px;
+    }
+    .section03{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 10px;
+    }
+ }
+ @media screen and (max-width: 1210px){
+    .banner{
+        margin-bottom: 70px;
+    }
+    .banner>.textBox>h2{
+        font-size: 40px;
+    }
+ }
+ @media screen and (max-width: 860px){
+
+ }
+ @media screen and (max-width: 600px){
+    .banner{
+        height: 130px;
+        margin-bottom: 50px;
+    }
+    .banner>.textBox::after{
+        height: 3px;
+    }
+    .banner>.textBox>h2{
+        font-size: 20px;
+    }
+    .section01{
+        margin-bottom: 10px;
+    }
+    .section01>h1{
+        font-size: 18px;
+    }
+    .section01>h1::before{
+        width: 30px;
+        top: -7px;
+    }
+    .section02>.notice>.title1{
+        width: 10%;
+        font-size: 14px;
+    }
+    .section02>.notice>.title2{
+        width: 40%;
+        font-size: 14px;
+    }
+    .section02>.notice>.title3{
+        width: 15%;
+        font-size: 14px;
+    }
+    .section02>.notice>.title4{
+        width: 15%;
+        font-size: 14px;
+    }
+    .section02>.notice>.title5{
+        width: 20%;
+        font-size: 14px;
+    }
+    .section03{
+        margin-bottom: 70px;
+    }
+ }
+
+

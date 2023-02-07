@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+.text{
+    width: 300px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 40px 0;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+a{
+    display: block;
+    width: 80px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px 0;
+    color: #fff;
+    background-color: rgb(25, 39, 100);
+    text-decoration: none;
+}

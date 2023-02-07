@@ -1,0 +1,77 @@
+@charset "UTF-8";
+.table{
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 15px 0;
+    border-bottom: 1px solid #eeeeee;
+    min-width: 300px;
+}
+.table .col1{
+    width: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.table .col2{
+    width: 65%;
+    padding-left: 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+.table .col3{
+    width: 10%;
+    text-align: center;
+    position: relative;
+}
+.table .col3>img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.table .col4{
+    width: 10%;
+    font-size: 14px;
+    color: rgb(46, 46, 46);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.table .col5{
+    width: 10%;
+    font-size: 14px;
+    color: rgb(46, 46, 46);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1210px){
+   .table{
+    width: 100%;
+   }
+}
+@media screen and (max-width: 600px){
+    .table .col1{
+        width: 10%;
+        font-size: 14px;
+    }
+    .table .col2{
+        width: 40%;
+        font-size: 14px;
+    }
+    .table .col3{
+        width: 15%;
+    }
+    .table .col4{
+        width: 15%;
+        font-size: 14px;
+    }
+    .table .col5{
+        width: 20%;
+        font-size: 10px;
+    }
+}

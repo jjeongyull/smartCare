@@ -1,0 +1,27 @@
+{
+    "totcount": null,
+    "nowpage": null,
+    "tabledata": [
+        {
+            "b_idx": "1",
+            "b_title": "테스트",
+            "b_content": "내용",
+            "b_writer": "admin",
+            "b_date": "2022-12-26 09:39:48"
+        },
+        {
+            "b_idx": "2",
+            "b_title": "1",
+            "b_content": "2",
+            "b_writer": "admin",
+            "b_date": "2022-12-26 10:21:17"
+        },
+        {
+            "b_idx": "3",
+            "b_title": "제목 입력",
+            "b_content": "내용 입력",
+            "b_writer": "admin",
+            "b_date": "2022-12-26 10:22:02"
+        }
+    ]
+}
